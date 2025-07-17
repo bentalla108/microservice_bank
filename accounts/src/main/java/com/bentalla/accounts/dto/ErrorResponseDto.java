@@ -1,12 +1,16 @@
 package com.bentalla.accounts.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.http.HttpStatus;
 
 import java.time.Instant;
-
+import java.time.LocalDateTime;
+@Data
+@AllArgsConstructor
 public class ErrorResponseDto {
     private String apiPath;
     private String errorMessage;
     private HttpStatus  errorCode;
-    private Instant errorTime;
+    private LocalDateTime errorTime;
 }
