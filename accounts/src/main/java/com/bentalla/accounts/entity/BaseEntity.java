@@ -6,16 +6,17 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.time.Instant;
+import java.time.LocalDateTime;
+
 @MappedSuperclass
 @Getter
 @Setter
 @ToString
 public class BaseEntity {
     @Column(updatable = false)
-    private Instant createdAt;
+    private LocalDateTime createdAt;
     @Column(insertable  = false)
-    private Instant updatedAt;
+    private LocalDateTime updatedAt;
     @Column(updatable = false)
     private String createdBy;
     @Column(insertable = false)
