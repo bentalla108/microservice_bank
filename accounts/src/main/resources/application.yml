@@ -16,3 +16,13 @@ spring:
       ddl-auto: create-drop
     show-sql: true
     defer-datasource-initialization: true
+build:
+  version: 4.0.0
+accounts:
+  message: "Welcome to Bank accounts related local APIs "
+  contactDetails:
+    name: "Ben Talla - Developer"
+    email: "bentalla@bentalla.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
