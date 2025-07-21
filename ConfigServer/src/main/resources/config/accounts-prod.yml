@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to Bank accounts related prod APIs "
+  message: "Welcome to Bank accounts related Production APIs "
   contactDetails:
     name: "Ben Talla - Product Owner"
     email: "bentalla@bentalla.com"
