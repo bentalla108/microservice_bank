@@ -5,19 +5,20 @@ spring:
   application:
     name: "configerver"
   profiles:
-    active: native
+#    active: native
+    active: git
 
   cloud:
     config:
       server:
-        native:
-          search-locations: "classpath:/config"
-  #        git:
-  #          uri: "https://github.com/eazybytes/eazybytes-config.git"
-  #          default-label: "main"
-  #          timeout: 5
-  #          clone-on-start: true
-  #          force-pull: true
+#        native:
+#          search-locations: "classpath:/config"
+          git:
+            uri: "https://github.com/bentalla108/microservice_config.git"
+            default-label: "main"
+            timeout: 5
+            clone-on-start: true
+            force-pull: true
 
   rabbitmq:
     host: "localhost"
