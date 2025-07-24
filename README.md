@@ -37,5 +37,5 @@
 | "docker compose start" | Starts existing (previously created) containers without recreating them |
 | "docker compose stop" | Stops running containers without removing them |
 | "docker run -p 3306:3306 --name accountsdb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=accountsdb -d mysql" | To create a MySQL DB container |
-| "docker run -p 6379:6379 --name eazyredis -d redis" | To create a Redis Container |
+| "docker run -p 6379:6379 --name bankredis -d redis" | To create a Redis Container |
 | "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev" | To create Keycloak Container|
